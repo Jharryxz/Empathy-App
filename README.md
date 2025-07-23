@@ -55,9 +55,9 @@ FUNCIONALIDADES PRINCIPALES
 INSTALACIÓN Y USO
 ----------------------------------------
 
-Instala XAMPP, composer y node.js, después con el composer en la carpeta C:\xampp\htdocs\Empathy-App accedes a la terminal(CMD) y ejecuta los siguiente pasos
+Instala XAMPP, composer y node.js, después con el composer en la raiz del proyecto accedes a la terminal(CMD) y ejecuta los siguiente pasos
 
-1. **Clona el repositorio o copia los archivos en tu servidor local (XAMPP recomendado).**
+1. **Clona el repositorio o copia los archivos en tu servidor local (XAMPP recomendado) "ESTE EQUIPO" C:\xampp\htdocs.**
 
 2. **Instala dependencias de Laravel:**
    - Abre una terminal en la raíz del proyecto y ejecuta:
@@ -66,7 +66,7 @@ Instala XAMPP, composer y node.js, después con el composer en la carpeta C:\xam
      ```
 
 3. **Configura el archivo `.env` de Laravel:**
-   - Copia `.env.example` a `.env` y ajusta la configuración de la base de datos.
+   - Cambiar el nombre del archivo `.env.example` a `.env` y ajusta la configuración de la base de datos.
 
 4. **Genera la clave de la app:**
    ```
@@ -75,18 +75,17 @@ Instala XAMPP, composer y node.js, después con el composer en la carpeta C:\xam
 
 5. **Ejecuta migraciones para crear las tablas:**
    ```
-   php artisan migrate
+   php artisan migrate  **si pide generar la base de datos porque esta no existe yes/no escriba yes 
    ```
 
 6. **Instala dependencias de Node para el frontend:**
-   - Abre una terminal en la raíz y ejecuta:
      ```
      npm install
      ```
 
 7. **Compila los assets con Vite:**
    ```
-   npm run dev
+   npm run dev *no cerrar la terminal con este comando
    ```
    (Para producción usa `npm run build`)
 
